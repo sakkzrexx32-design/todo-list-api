@@ -2,15 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
-        <title>Coffe Shop Website</title>
-        <!--link to font awesome for inserting icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!--lets link google font for inserting font families-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Shop Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-        <!--link to css file-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -18,10 +15,8 @@
         <header>
             <div class="container header-container">
                 <a href="#" class="logo">
-                    <!--now insert coffee cup icons here-->
                     <i class="fa-solid fa-mug-hot logo-icon"></i>
                     <div class="logo-text">Coffee<span>Time</span></div>
-                    
                 </a>
 
                 <nav>
@@ -35,16 +30,16 @@
 
                 <div class="nav-buttons">
                     <a href="#" class="btn btn-secondary">Sign In</a>
-                    <a href="#" class="btn btn-primary">Order Online</a>
+                    <a href="#products" class="btn btn-primary">Order Online</a>
                 </div>
             </div>
         </header>
 
         <!-- Hero section -->
-         <section class="hero">
+        <section class="hero">
             <div class="container">
-                <div class="hero content">
-                    <div class="hero subtitle">
+                <div class="hero-content">
+                    <div class="hero-subtitle">
                         <i class="fa-solid fa-seedling"></i>
                         Ethically Sourced Beans
                     </div>
@@ -55,20 +50,21 @@
                         <a href="#" class="btn btn-secondary">Visit Our Cafe</a>
                     </div>
                 </div>
-                <img src="1.jpg" alt="" width="370px">
+                <img src="1.jpg" alt="Coffee" width="370px">
             </div>
-         </section>
+        </section>
 
-         <!-- Products Section -->
-          <section class="products" id="products">
+        <!-- Products Section -->
+        <section class="products" id="products">
             <div class="container">
                 <div class="section-header">
                     <div class="section-subtitle">Our Selection</div>
-                    <h2 class="section-subtitle">Signature Coffee Blends</h2>
+                    <h2 class="section-title">Signature Coffee Blends</h2>
                     <p class="section-desc">Each batch is carefully roasted to highlight the unique characteristics of the beans.</p>
                 </div>
 
-                <div class="product-gird">
+                <div class="product-grid">
+                    <!-- Card 1 -->
                     <div class="product-card">
                         <div class="product-img">
                             <img src="2.jpg" alt="Ethiopian Yirgacheffe">
@@ -77,105 +73,114 @@
                             <div class="product-tag">BESTSELLER</div>
                             <h3 class="product-title">Ethiopian Yirgacheffe</h3>
                             <p class="product-desc">Floral notes with bright citrus acidity and a tea-like body. Light roast.</p>
+                            <button class="btn btn-primary add-cart">
+                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                            </button>
                             <div class="product-footer">
                                 <div class="product-price">$6.99</div>
-                                <div class="rating"></div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="3.jpg" alt="Colombian Supremo">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Colombian Supremo</h3>
+                            <p class="product-desc">Rich caramel sweetness with nutty undertones and balanced acidity. Medium roast.</p>
+                            <button class="btn btn-primary add-cart">
+                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                            </button>
+                            <div class="product-footer">
+                                <div class="product-price">$8.99</div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="4.jpg" alt="Dark Roast Espresso">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-tag">NEW</div>
+                            <h3 class="product-title">Dark Roast Espresso</h3>
+                            <p class="product-desc">Bold and intense with dark chocolate notes and a creamy mouthfeel. Dark roast.</p>
+                            <button class="btn btn-primary add-cart">
+                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                            </button>
+                            <div class="product-footer">
+                                <div class="product-price">$12.99</div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="3.jpg" alt="Colombian Supermo">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Colombian Supermo</h3>
-                        <p class="product-desc">Rich caramel sweetness with nutty understones and balanced acidity. Medium roast.</p>
-                        <div class="product-footer">
-                            <div class="product-price">$8.99</div>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>About COFFEETIME</h3>
+                        <p style="color: var(--coffee-accent); margin-bottom: 20px;">Artisan coffee roasters dedicated to quality, sustainability, and the perfect cup.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="4.jpg" alt="Dark Roast Espresso">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Coffee Blends</a></li>
+                            <li><a href="#">Coffee Guides</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Wholesale</a></li>
+                        </ul>
                     </div>
-                    <div class="product-info">
-                        <div class="product-tag">NEW</div>
-                        <h3 class="product-title">Dark Roast Espresso</h3>
-                        <p class="product-desc">Bold and intense with dark chocolate notes and a creamy mouthfeel. Dark roast.</p>
-                        <div contenteditable="product-footer">
-                            <div class="product-price">$12.99.</div>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
+
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="footer-links">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Coffee Lane, Terk Tla, OR</li>
+                            <li><i class="fa-solid fa-phone"></i> (855) 99997959</li>
+                            <li><i class="fa-solid fa-envelope"></i> hello@coffeetime.com</li>
+                            <li><i class="fa-solid fa-clock"></i> Mon-Sat: 7am - 8pm</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-</section>
 
-<!-- Footer -->
- <footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>About COFEETIME</h3>
-                <p style="color: var(--coffee-accent--); margin-bottom: 20px ;">Artisan coffee roasters dedicated to quality sustainability, and the perfect cup.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="copyright">
+                    &copy; 2026 Coffeetime Coffee Roasters. All rights reserved.
                 </div>
             </div>
+        </footer>
 
-            <div class="footer-column">
-                <h3>Quick links</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Coffee Blends</a></li>
-                    <li><a href="#">Coffee Guides</a></li>
-                    <li><a href="#">sustainability</a></li>
-                    <li><a href="#">Wholesale</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Contact Us</h3>
-                <ul class="footer-links">
-                    <li><i class="fa-solid fa-location-dot"></i> 123 Coffee lane, Terk Tla, OR</li>
-                    <li><i class="fa-solid fa-phone"></i> (855) 99997959</li>
-                    <li><i class="fa-solid fa-envelope"></i>hello@coffeetime.com</li>
-                    <li><i class="fa-solid fa-clock"></i> Mon-Sat: 7am - 8pm</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="copyright">
-            &copy; 2026 Coffeetime Cofee Roasters. All rights reserved.
-        </div>
-    </div>
- </footer>
-
-
-
-<!-- link to JavaScript file -->
- <script src="script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
